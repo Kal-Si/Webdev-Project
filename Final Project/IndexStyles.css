@@ -1,0 +1,96 @@
+
+body 
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header 
+{
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+/* 
+    Navigation styles 
+*/
+
+nav ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li 
+{
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a 
+{
+    color: darkorange;
+    text-decoration: none;
+    position: relative; /* Positioning context for pseudo-element */
+}
+
+nav a:after 
+{
+    content: '';
+    position: absolute;
+    bottom: -1px; /* Adjust this value to control the underline position */
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid darkorange; /* Underline color and thickness */
+}
+
+#main-content 
+{
+    padding: 20px;
+}
+
+/* 
+    Footer styles 
+*/
+
+footer 
+{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    left: 0; /* Ensure the footer starts from the left edge of the viewport */
+    right: 0; /* Ensure the footer ends at the right edge of the viewport */
+}
+
+
+/*
+    Map 
+*/
+
+#Kruse-Map 
+{
+    margin-top: 20px;
+    padding-left: 20rem;
+    background-color: #f9f9f9;
+}
+
+#Kruse-Map iframe 
+{
+    width: 800px;
+    height: 300px;
+    justify-content: center;
+}
+
+#reviews 
+{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}

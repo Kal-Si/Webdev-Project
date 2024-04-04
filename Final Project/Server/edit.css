@@ -1,0 +1,150 @@
+
+body 
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header 
+{
+    background-color: #3a3a3a;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li 
+{
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a 
+{
+    color: #ff8c00;
+    text-decoration: none;
+    position: relative;
+}
+
+nav a:after 
+{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid #ff8c00;
+}
+
+#edit_delete_body 
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+#header,
+#menu 
+{
+    background-color: #3a3a3a;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+#menu li 
+{
+    display: inline;
+    margin-right: 20px;
+}
+
+#menu a 
+{
+    color: #ff8c00;
+    text-decoration: none;
+}
+
+#menu a:hover 
+{
+    color: #ffa500;
+}
+
+#body 
+{
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+form.edit 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form.edit label 
+{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form.edit input[type="text"],
+form.edit textarea 
+{
+    width: 800px;
+    height: 150px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form.edit input[type="text"]:focus,
+form.edit textarea:focus 
+{
+    outline: none;
+    border-color: #ff8c00;
+    box-shadow: 0 0 5px rgba(255, 140, 0, 0.5);
+}
+
+#content_label 
+{
+    align-self: flex-start;
+}
+
+#edit_buttons 
+{
+    margin-top: 20px;
+}
+
+#edit_buttons input[type="submit"] 
+{
+    background-color: #ff8c00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#edit_buttons input[type="submit"]:hover 
+{
+    background-color: #ffa500;
+}
+
+#footer 
+{
+    background-color: #3a3a3a;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
